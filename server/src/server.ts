@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Serves static files in the entire client's dist folder
-// app.use(express.static('../client/dist'));
+app.use(express.static('../client/dist'));
 app.use(express.json());
 app.use(routes);
 
